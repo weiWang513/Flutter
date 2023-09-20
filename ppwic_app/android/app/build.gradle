@@ -31,7 +31,7 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 }
 android {
-    namespace "com.example.ppwic_app"
+    namespace "com.example.ppwicapp"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 

@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:ppwic_app/home.dart';
 import 'package:ppwic_app/webView.dart';
 
 void main() {
   runApp(MaterialApp(
+    theme: ThemeData(
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+      // useMaterial3: true
+    ),
     home: MyApp(),
   ));
 }
@@ -25,8 +30,9 @@ class MyApp extends StatelessWidget {
         ),
         ElevatedButton(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => TestWebView(url: c1.text)));
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => Home()));
+              // MaterialPageRoute(builder: (_) => TestWebView(url: c1.text)));
             },
             child: const Text('跳转'))
       ]),
